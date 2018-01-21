@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Thomas Sauer
+	email = t-sauer@outlook.de
+[init]
+	templatedir = ~/.git-templates
+[alias]
+	cleanup = "!git fetch --prune && git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
+[push]
+	default = simple
+
+[includeIf "gitdir:~/Code/"]
+  path = .gitconfig_private
+[core]
+	excludesfile = /Users/ts02/.gitignore_global

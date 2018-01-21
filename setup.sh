@@ -1,5 +1,5 @@
 if [ ! -d ~/dotfiles ]; then
-  git clone git@github.com:t-sauer/dotfiles.git ~/dotfiles
+  git clone https://github.com/t-sauer/dotfiles.git ~/dotfiles
 fi
 
 # Install Homebrew

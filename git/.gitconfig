@@ -13,4 +13,4 @@
 [includeIf "gitdir:~/Code/"]
   path = .gitconfig_private
 [core]
-	excludesfile = /Users/ts02/.gitignore_global
+	excludesfile = ~/.gitignore_global

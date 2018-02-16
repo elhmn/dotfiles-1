@@ -49,7 +49,7 @@ ZSH_THEME="tsauer"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump npm osx colorize ember-cli bundler)
+plugins=(git autojump npm osx colorize bundler)
 
 # User configuration
 
@@ -85,10 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export SSH_AWS_USER='thomas.sauer'
-DEFAULT_USER="ts02"
-
-[ -f ~/.ssh/id_rsa ] && ssh-add ~/.ssh/id_rsa
+DEFAULT_USER="tsauer"
 
 alias lslinked="lsa node_modules | grep \\\\.\\\\./"
 alias reloadconfig=". ~/.zshrc"
@@ -102,7 +99,3 @@ source ~/.iterm2_shell_integration.`basename $SHELL`
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # ALWAYS SOURCE THIS LAST!!!
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH="$HOME/.cargo/bin:/usr/local/sbin:$PATH"
-
-# added by travis gem
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
